@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Kentucky Fried Chicken</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/KFC-Logo.png" alt="KFC Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#ubicaciones">Ubicaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>¡Finger Lickin' Good!</h1>
+            <p>Descubre el sabor único del pollo frito más delicioso del mundo</p>
+            <button class="cta-button">Ordena Ahora</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="KFC Chicken Bucket">
+        </div>
+    </section>
+
+    <!-- Promociones Destacadas -->
+    <section id="promociones" class="promociones">
+        <div class="container">
+            <h2>Promociones Especiales</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Bucket Familiar">
+                    <div class="promo-content">
+                        <h3>Bucket Familiar</h3>
+                        <p>15 piezas de pollo + papas familiares + ensalada</p>
+                        <span class="price">$24.99</span>
+                        <button class="order-btn">Ordenar</button>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80" alt="Combo Individual">
+                    <div class="promo-content">
+                        <h3>Combo Individual</h3>
+                        <p>3 piezas de pollo + papas + bebida + galleta</p>
+                        <span class="price">$8.99</span>
+                        <button class="order-btn">Ordenar</button>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Chicken Tenders">
+                    <div class="promo-content">
+                        <h3>Hot Wings</h3>
+                        <p>12 alitas picantes + salsa especial + apio</p>
+                        <span class="price">$12.99</span>
+                        <button class="order-btn">Ordenar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú Principal -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-categories">
+                <div class="category active" data-category="chicken">Pollo</div>
+                <div class="category" data-category="burgers">Hamburguesas</div>
+                <div class="category" data-category="sides">Acompañamientos</div>
+                <div class="category" data-category="desserts">Postres</div>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-section" id="chicken">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Original Recipe">
+                        <div class="item-info">
+                            <h3>Original Recipe</h3>
+                            <p>La receta secreta de 11 hierbas y especias</p>
+                            <span class="price">Desde $2.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1606755962773-d324e2a3c5d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Crispy Chicken">
+                        <div class="item-info">
+                            <h3>Extra Crispy</h3>
+                            <p>Pollo súper crujiente con empanizado especial</p>
+                            <span class="price">Desde $3.29</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="Chicken Tenders">
+                        <div class="item-info">
+                            <h3>Chicken Tenders</h3>
+                            <p>Tiras de pollo tierno y jugoso</p>
+                            <span class="price">Desde $4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicaciones -->
+    <section id="ubicaciones" class="ubicaciones">
+        <div class="container">
+            <h2>Nuestras Ubicaciones</h2>
+            <div class="ubicaciones-grid">
+                <div class="ubicacion-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Centro Comercial Plaza Norte</h3>
+                    <p>Av. Principal 123, Local 45</p>
+                    <p>Horario: 10:00 AM - 10:00 PM</p>
+                    <button class="location-btn">Ver en Mapa</button>
+                </div>
+                <div class="ubicacion-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Mall del Sur</h3>
+                    <p>Av. Secundaria 456, Piso 2</p>
+                    <p>Horario: 11:00 AM - 11:00 PM</p>
+                    <button class="location-btn">Ver en Mapa</button>
+                </div>
+                <div class="ubicacion-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Centro Histórico</h3>
+                    <p>Calle Central 789</p>
+                    <p>Horario: 9:00 AM - 9:00 PM</p>
+                    <button class="location-btn">Ver en Mapa</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/KFC-Logo.png" alt="KFC Logo" class="footer-logo">
+                    <p>Desde 1952, sirviendo el mejor pollo frito del mundo con nuestra receta secreta de 11 hierbas y especias.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#ubicaciones">Ubicaciones</a></li>
+                        <li><a href="#">Nutrición</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Atención al Cliente</h3>
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 1-800-CALL-KFC</p>
+                        <p><i class="fas fa-envelope"></i> info@kfc.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KFC Corporation. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
